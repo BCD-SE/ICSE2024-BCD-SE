@@ -1,4 +1,4 @@
-# ICSE2024-BCDSE
+# ICSE2024-BCD-SE
 
 ## Getting Started 
 We have packaged all the environment and configuration related to the experiment into a docker image and uploaded it to the *dockerHub*. The only thing you need to do is pull it to your local machine.
