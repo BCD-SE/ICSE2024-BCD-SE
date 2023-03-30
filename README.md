@@ -3,8 +3,8 @@
 ## Getting Started 
 We have packaged all the environment and configuration related to the experiment into a docker image and uploaded it to the *dockerHub*. The only thing you need to do is pull it to your local machine.
 ```
-$ docker pull bcgse/experiment:latest
-$ docker run --rm -ti --ulimit='stack=-1:-1' bcgse/experiment
+$ docker pull bcdse/icse_2024:v1
+$ docker run --rm -ti --ulimit='stack=-1:-1' bcdse/icse_2024
 ```
 
 ## Experiment replay
