@@ -1,0 +1,4 @@
+benchMark,Instrs,Time(s),Analysis(s),Divide(s),Check(s),Completed
+schedule,2084430103,7392.62,191.991s,25.8528s,8668044
+printtokens2,8182924489,7208.22,7.29169s,7.05526s,5579588
+schedule2,240672386,611.53,124.676s,4.59349s,239959
