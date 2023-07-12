@@ -1,4 +1,4 @@
-ICSE2024-BCDSE
+POPL2024-BCDSE
 =============================
 An extension of KLEE (http://klee.github.io). 
 ## Running via cmake
