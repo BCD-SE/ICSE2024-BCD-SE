@@ -1,0 +1,27 @@
+../../../klee_build/bin/klee --libc=uclibc --posix-runtime get_branch.bc
+PID: 169554
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2023-06-16 09:07:13
+DG_build: 0.00184743s 00:00:000000
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+(RP 0)(NURS:C 0)</InterleavedSearcher>
+<InterleavedSearcher> containing 2 searchers:
+(RP 0)(NURS:C 0)</InterleavedSearcher>
+END searcher description
+Analysis: 2.9828e-05s 00:00:000000
+Divede: 0.000143122s 00:00:000000
+Check: 5.333e-06s 00:00:000000
+
+KLEE: done: redundant paths = 0
+Finished: 2023-06-16 09:07:13
+Elapsed: 00:00:00
+KLEE: done: explored paths = 22
+KLEE: done: avg. constructs per query = 23
+KLEE: done: total queries = 45
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 23
+KLEE: done: query cex = 45
+KLEE: done: total instructions = 17004
+KLEE: done: completed paths = 22
+KLEE: done: generated tests = 19

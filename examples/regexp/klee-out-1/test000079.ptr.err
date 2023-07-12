@@ -1,0 +1,24 @@
+Error: memory error: out of bound pointer
+File: Regexp.c
+Line: 23
+assembly.ll line: 8806
+Stack: 
+	#000008806 in matchhere (=55557831, =55554387) at Regexp.c:23
+	#100008917 in matchstar (, =55557831, =55554387) at Regexp.c:16
+	#200008831 in matchhere (=55557829, =55554387) at Regexp.c:26
+	#300008917 in matchstar (, =55557829, =55554387) at Regexp.c:16
+	#400008831 in matchhere (=55557827, =55554387) at Regexp.c:26
+	#500008887 in matchhere (=55557826, =55554386) at Regexp.c:30
+	#600008887 in matchhere (=55557825, =55554385) at Regexp.c:30
+	#700008887 in matchhere (=55557824, =55554384) at Regexp.c:30
+	#800008769 in match (=55557824, =55554384) at Regexp.c:38
+	#900008963 in __klee_posix_wrapped_main () at Regexp.c:59
+	#1000007029 in __user_main (=1, =43532720, =43532736) at /data/klee/runtime/POSIX/klee_init_env.c:245
+	#1100000522 in __uClibc_main (=25981064, =1, =43532720, =0, =0, =0, =0) at libc/misc/internals/__uClibc_main.c:401
+	#1200000689 in main (=1, =43532720)
+Info: 
+	address: 55557831
+	next: object at 55557928 of size 8
+		MO7126[8] allocated at match():  %5 = alloca i8*, align 8
+	prev: object at 55557824 of size 7
+		MO7120[7] allocated at __klee_posix_wrapped_main():  %2 = alloca [7 x i8], align 1

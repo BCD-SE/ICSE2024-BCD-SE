@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: a + b != 10
+File: get_branch.c
+Line: 25
+assembly.ll line: 93
+Stack: 
+	#000000093 in get_branch (, , , ) at get_branch.c:25
+	#100000130 in main () at get_branch.c:78

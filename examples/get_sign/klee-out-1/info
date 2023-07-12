@@ -1,0 +1,23 @@
+klee --search=dfs get_sign.bc
+PID: 20300
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2022-07-04 15:39:39
+BEGIN searcher description
+<PendingSearcher>
+DFSSearcher
+DFSSearcher
+</PendingSearcher>
+END searcher description
+Divide: 0 s
+Analysis: 0 s
+Finished: 2022-07-04 15:39:39
+Elapsed: 00:00:00
+KLEE: done: explored paths = 3
+KLEE: done: avg. constructs per query = 7
+KLEE: done: total queries = 6
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 3
+KLEE: done: query cex = 6
+KLEE: done: total instructions = 33
+KLEE: done: completed paths = 3
+KLEE: done: generated tests = 3
